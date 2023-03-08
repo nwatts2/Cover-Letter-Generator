@@ -37,6 +37,11 @@ struct HelpView: View {
                                 Text("Full Name")
                             }
                             HStack {
+                                Text("*{title}")
+                                Spacer()
+                                Text("Job Title")
+                            }
+                            HStack {
                                 Text("*{phone}")
                                 Spacer()
                                 Text("Phone Number")
@@ -66,16 +71,16 @@ struct HelpView: View {
                                 Spacer()
                                 Text("Zip Code")
                             }
-                            HStack {
-                                Text("*{manager}")
-                                Spacer()
-                                Text("Hiring Manager")
-                            }
+                        }
+                        HStack {
+                            Text("*{manager}")
+                            Spacer()
+                            Text("Hiring Manager")
                         }
                         HStack {
                             Text("*{position}")
                             Spacer()
-                            Text("Position Title")
+                            Text("Listing Position")
                         }
                         HStack {
                             Text("*{company}")
@@ -90,7 +95,7 @@ struct HelpView: View {
                     }
                     .padding()
                 }
-                .frame(width: 250, height: 350)
+                .frame(width: 250, height: 370)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 
             VStack (spacing: 10) {
@@ -119,7 +124,7 @@ struct HelpView: View {
                 }
         }
         .padding()
-        .frame(width:680, height:370)
+        .frame(width:680, height:390)
     }
 }
 

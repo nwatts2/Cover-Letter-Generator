@@ -69,6 +69,8 @@ class Generator: ObservableObject {
                 finalString += self.firstName
             case "lastName":
                 finalString += self.lastName
+            case "title":
+                finalString += self.title
             case "email":
                 finalString += self.email
             case "phone":
